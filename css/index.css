@@ -1,3 +1,4 @@
+
 body {
   background: url("../images/background.png") no-repeat center center fixed;
   background-size: cover;
@@ -7,7 +8,7 @@ body {
 
 header {
   width: fit-content;
-  padding: 10px;
+  padding: 15px 90px;
   margin: 10px auto 0;
   text-wrap: balance;
   position: relative;
@@ -15,6 +16,10 @@ header {
   font-size: 18px;
   text-align: center;
   color: black;
+  
+  /* Horizontal oval cloud */
+  background: rgba(255, 255, 255, 1);
+  border-radius: 200px / 100px;
 }
 
 main {
@@ -23,6 +28,26 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 60vh;
+}
+
+/* Style the spans */
+main a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  font-size: 24px; /* Bigger font */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+  text-align: center;
+}
+
+/* Show spans on hover */
+main a:hover span {
+  opacity: 1;
 }
 
 .computer {
@@ -99,4 +124,5 @@ main {
 
 .computer:hover, .posters:hover, .blog:hover, .board:hover, .crochet:hover, .games:hover, .books:hover, .flipphone:hover, .letter:hover, .media:hover, .music:hover, .roma:hover {
   transform: rotate(7deg);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
 }
