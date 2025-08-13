@@ -1,0 +1,102 @@
+body {
+  background: url("../images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Courier', monospace;
+}
+
+header {
+  width: fit-content;
+  padding: 10px;
+  margin: 10px auto 0;
+  text-wrap: balance;
+  position: relative;
+  z-index: 100;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.computer {
+  position: absolute;
+  top: 290px;
+  left: 160px;
+}
+
+.posters {
+  position: absolute;
+  bottom: 300px;
+  left: 1500px;
+}
+
+.blog {
+  position: absolute;
+  top: 490px;
+  left: 150px;
+}
+
+.board {
+  position: absolute;
+  bottom: 450px;
+  left: 470px;
+}
+
+.crochet {
+  position: absolute;
+  top: 450px;
+  right: 750px;
+}
+
+.games {
+  position: absolute;
+  top: 560px;
+  left: 1530px;
+}
+
+.books {
+  position: absolute;
+  bottom: 450px;
+  left: 150px;
+}
+
+.flipphone {
+  position: absolute;
+  top: 325px;
+  left: 460px;
+}
+
+.letter {
+  position: absolute;
+  bottom: 50px;
+  left: 120px;
+}
+
+.media {
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+
+.music {
+  position: absolute;
+  top: 400px;
+  right: 570px;
+}
+
+.roma {
+  position: absolute;
+  top: 300px;
+  right: 1000px;
+}
+
+.computer:hover, .posters:hover, .blog:hover, .board:hover, .crochet:hover, .games:hover, .books:hover, .flipphone:hover, .letter:hover, .media:hover, .music:hover, .roma:hover {
+  transform: rotate(7deg);
+}
