@@ -17,7 +17,6 @@ header {
   text-align: center;
   color: black;
   
-  /* Horizontal oval cloud */
   background: rgba(255, 255, 255, 1);
   border-radius: 200px / 100px;
 }
@@ -30,7 +29,6 @@ main {
   min-height: 60vh;
 }
 
-/* Style the spans */
 main a span {
   position: absolute;
   top: 50%;
@@ -38,14 +36,13 @@ main a span {
   transform: translate(-50%, -50%);
   opacity: 0;
   color: white;
-  font-size: 24px; /* Bigger font */
+  font-size: 24px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   pointer-events: none;
   text-align: center;
 }
 
-/* Show spans on hover */
 main a:hover span {
   opacity: 1;
 }
