@@ -10,7 +10,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 1vw auto;
+  margin: 2.5vh auto;
   gap: 0.5vw;
   max-width: 30vw;
 }
