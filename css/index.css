@@ -1,6 +1,6 @@
 
 body {
-  background: url("../images/background.png") no-repeat center center fixed;
+  background-color: #3e85a7 no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   font-family: 'Courier', monospace;
@@ -13,12 +13,6 @@ header {
   text-wrap: balance;
   position: relative;
   z-index: 100;
-  font-size: 18px;
-  text-align: center;
-  color: black;
-  
-  background: rgba(255, 255, 255, 1);
-  border-radius: 200px / 100px;
 }
 
 main {
@@ -35,7 +29,7 @@ main a span {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 24px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -47,79 +41,73 @@ main a:hover span {
   opacity: 1;
 }
 
-.computer {
+.about-link {
   position: absolute;
   top: 290px;
   left: 160px;
 }
 
-.posters {
-  position: absolute;
-  bottom: 300px;
-  left: 1500px;
-}
-
-.blog {
+.blog-link {
   position: absolute;
   top: 490px;
   left: 150px;
 }
 
-.board {
+.changelog-link {
   position: absolute;
   bottom: 450px;
   left: 470px;
 }
 
-.crochet {
+.crochet-link {
   position: absolute;
   top: 450px;
   right: 750px;
 }
 
-.games {
+.games-link {
   position: absolute;
   top: 560px;
   left: 1530px;
 }
 
-.books {
+.writing-link {
   position: absolute;
   bottom: 450px;
   left: 150px;
 }
 
-.flipphone {
+.sitemap-link {
   position: absolute;
   top: 325px;
   left: 460px;
 }
 
-.letter {
+.guestbook-link {
   position: absolute;
   bottom: 50px;
   left: 120px;
 }
 
-.media {
+.media-link {
   position: absolute;
   top: 200px;
   right: 50px;
 }
 
-.music {
+.music-link {
   position: absolute;
   top: 400px;
   right: 570px;
 }
 
-.roma {
+.roma-link {
   position: absolute;
   top: 300px;
   right: 1000px;
 }
 
-.computer:hover, .posters:hover, .blog:hover, .board:hover, .crochet:hover, .games:hover, .books:hover, .flipphone:hover, .letter:hover, .media:hover, .music:hover, .roma:hover {
+.about-link:hover, .blog-link:hover, .changelog-link:hover, .crochet-link:hover, .games-link:hover, .writing-link:hover, .sitemap-link:hover, .guestbook-link:hover, .media-link:hover, .music-link:hover, .roma-link:hover {
   transform: rotate(7deg);
   filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
 }
