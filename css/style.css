@@ -62,6 +62,13 @@ a:hover {
     border-width:  7px;
     border-style:  solid;
     background-color: #f5f0dc;
+
+    marquee {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        flex-direction: row;
+    }
 }
 
 .wrapper > div.sidebar {

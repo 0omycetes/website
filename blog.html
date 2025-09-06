@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header"></div>
+        <div class="wrapper">
+            <div class="marquee"></div>
+            <div class="sidebar"></div>
+            <div class="main">
+                           
+            </div>
+        </div>
+
+        <script>
+            async function loadComponent(selector, file) {
+                const res = await fetch(file);
+                document.querySelector(selector).innerHTML = await res.text();
+            }
+
+            loadComponent(".marquee", "marquee.html");
+            loadComponent(".sidebar", "sidebar.html");
+        </script>
+    </body>
+</html>
