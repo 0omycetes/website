@@ -92,8 +92,8 @@ main {
 .bed { grid-area: 10 / 28 / 30 / 54; }
 
 .about-link { grid-area: 13 / 13 / 21 / 21; }
+.art-link { grid-area: 4 / 24 / 12 / 34; }
 .blog-link { grid-area: 20 / 11 / 25 / 16; }
-.changelog-link { grid-area: 4 / 24 / 12 / 34; }
 .crochet-link { grid-area: 25 / 48 / 32 / 53; }
 .games-link { grid-area: 28 / 65 / 32 / 69; z-index: 3; }
 .media-link { grid-area: 13 / 60 / 30 / 77; }
