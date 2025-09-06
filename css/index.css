@@ -29,7 +29,7 @@ main {
 }
 
 .room-furniture {
-  z-index: 100;
+  z-index: 1;
 
   img {
     width: 100%;
@@ -41,7 +41,7 @@ main {
 .interactive-link {
   display: block;
   position: relative;
-  z-index: 200;
+  z-index: 2;
 
   > img, > div {
     width: 100%;
@@ -95,7 +95,7 @@ main {
 .blog-link { grid-area: 20 / 11 / 25 / 16; }
 .changelog-link { grid-area: 4 / 24 / 12 / 34; }
 .crochet-link { grid-area: 25 / 48 / 32 / 53; }
-.games-link { grid-area: 28 / 65 / 32 / 69; z-index: 300; }
+.games-link { grid-area: 28 / 65 / 32 / 69; z-index: 3; }
 .media-link { grid-area: 13 / 60 / 30 / 77; }
 .music-link { grid-area: 22 / 54 / 28 / 59; }
 .writing-link { grid-area: 9 / 10 / 13 / 15; }

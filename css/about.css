@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f3c678;
-    color: #333;
 }
 
 .title {
@@ -101,4 +100,10 @@ section {
     border-radius: 20px;
     padding: 5%;
     text-wrap: wrap;
+    h1 { color: #ffffff;
+        -webkit-text-stroke: 1.5px #333;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    p { color: #333; }
 }
