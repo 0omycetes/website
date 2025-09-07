@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 0;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 p, li {
     font-family: "MS Gothic";
     line-height: 25px;
@@ -35,7 +39,7 @@ ul {
     background-color: #ede2d1;
     border: 2px #b38d6b dashed;
     border-radius: 15px;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 20px 10px 40px;
 }
 
 .header {
@@ -105,7 +109,7 @@ ul {
     background-color: #f5f0dc;
 }
 
-section {
+section, article {
     border: 2px dashed;
     padding: 20px;
 }

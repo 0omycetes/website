@@ -12,14 +12,12 @@ cards.forEach(card => {
     const img = card.querySelector('img');
     reviewImg.src = img.src;
 
-    // If card has data attributes → media mode
     if (card.dataset.title) {
       textBox.style.display = 'flex';
       titleEl.innerHTML = card.dataset.title;
-      infoEl.innerHTML = `${card.dataset.year} • ${card.dataset.director} • ${card.dataset.rating}`;
+      infoEl.innerHTML = `${card.dataset.year} &#124; ${card.dataset.director} &#124; ${card.dataset.rating}`;
       reviewEl.innerHTML = card.dataset.review;
     } else {
-      // Art mode → hide text box
       textBox.style.display = 'none';
     }
 
