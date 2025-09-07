@@ -10,7 +10,24 @@
             <div class="marquee"></div>
             <div class="sidebar"></div>
             <div class="main">
-                           
+                <div class="gallery">
+                    <div class="gallery-card">
+                        <img src="images/computer.png" alt="Artwork 1">
+                    </div>
+                    <div id="review-overlay">
+                        <div id="review-content">
+                            <span id="close-btn">&times;</span>
+                            <div class="poster-wrapper">
+                                <img id="review-img" src="" alt="Poster or Artwork">
+                                <div class="text-box" id="text-box">
+                                    <h2 id="movie-title"></h2>
+                                    <p id="movie-info"></p>
+                                    <p id="movie-review"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -24,5 +41,6 @@
             loadComponent(".marquee", "marquee.html");
             loadComponent(".sidebar", "sidebar.html");
         </script>
+        <script src="/js/gallery.js"></script>
     </body>
 </html>
