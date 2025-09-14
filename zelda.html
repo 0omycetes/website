@@ -13,16 +13,7 @@
                 <h1>The Legend of Zelda</h1>           
             </div>
         </div>
-
-        <script>
-            async function loadComponent(selector, file) {
-                const res = await fetch(file);
-                document.querySelector(selector).innerHTML = await res.text();
-            }
-            
-            loadComponent(".header", "header.html");
-            loadComponent(".marquee", "marquee.html");
-            loadComponent(".sidebar", "sidebar.html");
-        </script>
+        <script src="js/gallery.js"></script>
+        <script src="js/spa.js"></script>
     </body>
 </html>
