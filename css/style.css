@@ -50,7 +50,6 @@ ul {
     width: 50%;
     height: 150px;
     margin: auto;
-    color: #b38d6b;
 
     img {
         width: 200px;
@@ -247,6 +246,7 @@ section, article {
 }
 
 .player {
+    font-family: 'MS Gothic';
     position: relative;
     width: 100%;
     display: flex;
@@ -263,18 +263,8 @@ section, article {
     position: relative;
 }
 
-.player-iframe .player-header a {
-    color: #8e7166;
-    text-decoration: none;
-    transition: all 0.2s;
-}
-
-.player-iframe .player-header a:hover {
-    text-shadow: 1px 1px white, 0 0 4px #ffc0cb, 0 0 6px #ffb6c1;
-}
-
 .song-info {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     text-align: center;
 }
 
@@ -285,19 +275,14 @@ section, article {
 }
 
  .controls button {
-    background-color: #F58B54;
-    border: 1px solid #E16A54;
+    background-color: #EACAEE;
+    border: 1px solid #571D63;
     font-size: 0.5rem;
     padding: 0px 1px;
     border-radius: 2px;
     cursor: pointer;
-    color: #a65c72;
+    color: #571D63;
     transition: all 0.2s;
-}
-
-.controls button:hover {
-    background-color: #e07f4c;
-    color: #8e4b5b;
 }
 
 .progress-container {
@@ -314,10 +299,10 @@ section, article {
 
 .progress-bar-bg {
     flex: 1;
-    height: 4px; 
-    background-color: #db7b97;
+    height: 6px; 
+    background-color: #EACAEE;
     margin: 0 2px;
-    border-radius: 2px;
+    border-radius: 3px;
     cursor: pointer;
     overflow: hidden;
 }
@@ -325,20 +310,24 @@ section, article {
 .progress-bar {
     height: 100%;
     width: 0%;
-    background-color: #a65c72;
-    border-radius: 2px;
+    background-color: #571D63;
+    border-radius: 3px;
     transition: width 0.05s linear;
 }
 
+.volume-container {
+    display: flex;
+    justify-content: center; /* centers slider horizontally */
+    margin: 5px 0;          /* spacing from artist name and controls */
+}
+
 .volume-slider {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    width: 50px;
+    position: static;
+    width: 80px;
     height: 6px;
     cursor: pointer;
     -webkit-appearance: none;
-    background: #F58B54;
+    background: #EACAEE;
     border-radius: 3px;
 }
 
@@ -346,16 +335,17 @@ section, article {
     -webkit-appearance: none;
     width: 12px;
     height: 12px;
-    margin-top: -3px; 
-    background: url('data:image/svg+xml;utf8,<svg fill="%23db7b97" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') no-repeat center center;
-    background-size: contain;
+    border-radius: 50%;
+    background-color: #571D63;
     border: none;
+    cursor: pointer;
 }
 
 .volume-slider::-moz-range-thumb {
     width: 12px;
     height: 12px;
-    background: url('data:image/svg+xml;utf8,<svg fill="%23db7b97" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') no-repeat center center;
-    background-size: contain;
+    border-radius: 50%;
+    background-color: #571D63; 
     border: none;
+    cursor: pointer;
 }
