@@ -116,8 +116,24 @@
     }
 
     if (volumeSlider) {
-      volumeSlider.addEventListener('input', (e) => { audio.volume = Number(e.target.value); });
+      // Set initial volume
       volumeSlider.value = (!isNaN(audio.volume) ? audio.volume : 1);
+      audio.volume = Number(volumeSlider.value);
+
+      // Function to update the slider background
+      function updateVolumeBackground(slider) {
+        const value = slider.value;
+        slider.style.background = `linear-gradient(to right, #ac67baff 0%, #ac67baff ${value*100}%, #EACAEE ${value*100}%, #EACAEE 100%)`;
+      }
+
+      // Update on input
+      volumeSlider.addEventListener('input', (e) => {
+        audio.volume = Number(e.target.value);
+        updateVolumeBackground(volumeSlider);
+      });
+
+      // Initialize background on load
+      updateVolumeBackground(volumeSlider);
     }
 
     audio.addEventListener('ended', () => { nextBtn.click(); });
