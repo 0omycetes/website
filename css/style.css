@@ -6,10 +6,10 @@
 }
 
 body {
-    background-image: url("../images/yellow.jpg");
+    background-image: url("../images/stars.gif");
     background-repeat: repeat;
     font-size: 16px;
-    color: #b38d6b;
+    color: #571D63;
     text-align: justify;
 }
 
@@ -28,18 +28,19 @@ p, li {
 }
 
 a {
-    color: #74a545;
+    color: #005322;
 }
 
 a:hover {
-    color: #8ad955;
+    color: #19A453;
 }
 
 ul {
-    background-color: #ede2d1;
-    border: 2px #b38d6b dashed;
+    background-color: #EACAEE;
+    border: 2px #571D63 dashed;
     border-radius: 15px;
     padding: 10px 20px 10px 40px;
+    color: #2C0036;
 }
 
 .header {
@@ -65,12 +66,9 @@ ul {
     grid-template-columns: 230px 840px;
     gap: 4px;
     padding: 4px;
-    border-width: 7px;
-    border-style: solid;
-    border-image: url("https://foollovers.com/mat/baf/food/fo32-008-a.gif") 7 round;
     width: 1080px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #50488B;
 }
 
 .wrapper > .marquee {
@@ -80,7 +78,7 @@ ul {
     border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABE0lEQVR4AbzOQUooURBD0f9dk2N34SrdhWP3pJzBLaqfjQiiDSF5SSr0w79f+P5m9Pnp8X3/vDfwMNDhfPMvf6rw8vr2HwuxN5x65zLvMKMCxwXeW8tOr/zMZrTAIe0gpjfysT7QdWaUUVAJA3/z1vuOhsuoMnOP0HkxTxfzaBxmVKAEhd9hfXBff0YzhKCYd8dyPTjzGa2E4a68j+V6kC6f0QIMypXuWK4H6XozmqEAynl3LNeDM59RoSKcpa/e+uC+3owyCiphkG2mdbGMxuEyuku0MqTj7Rni4zCjAmWgFWJ6Ix/rA11nRs/AuxLtCG8vfWYzquBoF3rnYeDf9XlwGWV0QIM3nNobyujwabTgJ/wBAAD//7ugOcIAAAAGSURBVAMAx1RQOkr6v1sAAAAASUVORK5CYII=") 7 /  7px / 0 round;
     border-width:  7px;
     border-style:  solid;
-    background-color: #f5f0dc;
+    background-color: #F5E8F4;
 
     marquee {
         width: 1050px;
@@ -97,7 +95,7 @@ ul {
     border-width:  7px;
     border-style:  solid;
     padding: 20px;
-    background-color: #f5f0dc;
+    background-color: #F5E8F4;
 }
 
 .wrapper > .main {
@@ -106,7 +104,7 @@ ul {
     border-width:  7px;
     border-style:  solid;
     padding: 20px;
-    background-color: #f5f0dc;
+    background-color: #F5E8F4;
 }
 
 section, article {
@@ -157,10 +155,11 @@ section, article {
 
 .callout {
     display: block;
-    background-color: #ede2d1;
+    background-color: #EACAEE;
     border-radius: 10px;
     padding: 10px;
     width: fit-content;
+    color: #2C0036;
 }
 
 .gallery {
@@ -233,7 +232,7 @@ section, article {
     padding: 20px;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.4);
-    color: #fff;
+    color: #ffffff;
     overflow: auto;
     text-align: left;
 }
