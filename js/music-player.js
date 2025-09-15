@@ -6,12 +6,12 @@
     { title: 'Sidekick', artist: 'pablopablo, guitarricadelafuente', src: 'https://files.catbox.moe/n2yn2a.mp3', spotify: 'https://open.spotify.com/intl-es/track/6KUasBYtaeWOdIbC1FZNbI?si=637d751426e24ec4' },
     { title: 'take me by the hand', artist: 'Oklou, Bladee', src: 'https://files.catbox.moe/1xfkve.mp3', spotify: 'https://open.spotify.com/intl-es/track/1oo8xwvtRep4Frhrpte5Eg?si=3c4b7b07c13f4e49' },
     { title: 'Look At Me Now', artist: 'Caroline Polachek', src: 'https://files.catbox.moe/ogivwa.mp3', spotify: 'https://open.spotify.com/intl-es/track/1z7Pc2fpIffOtXQh1XHMn9?si=bf5ee8414b6e4bf4' },
-    { title: 'Heavy Water/I&#39;d rather be sleeping', artist: 'Grouper', src: 'https://files.catbox.moe/1e2hhl.mp3', spotify: 'https://open.spotify.com/intl-es/track/6IUwiHsyKAZtfBy37Wu4ij?si=bdd499f3dbe848cf' },
-    { title: 'I Don&#39;t Wanna Know', artist: 'Charli XCX', src: 'https://files.catbox.moe/bdlxk5.mp3', spotify: 'https://open.spotify.com/intl-es/track/2wsypbBdFwN1woTAh9sq6X?si=c1733515cedf4fb1' },
+    { title: "Heavy Water/I'd rather be sleeping", artist: 'Grouper', src: 'https://files.catbox.moe/1e2hhl.mp3', spotify: 'https://open.spotify.com/intl-es/track/6IUwiHsyKAZtfBy37Wu4ij?si=bdd499f3dbe848cf' },
+    { title: "I Don't Wanna Know", artist: 'Charli XCX', src: 'https://files.catbox.moe/bdlxk5.mp3', spotify: 'https://open.spotify.com/intl-es/track/2wsypbBdFwN1woTAh9sq6X?si=c1733515cedf4fb1' },
     { title: 'Heavenly', artist: 'Judeline, Rusowsky', src: 'https://files.catbox.moe/mw0prn.mp3', spotify: 'https://open.spotify.com/intl-es/track/5Bng1Bwy7PFQys6qByKmdT?si=360704f6a8644661' },
     { title: 'Being Harsh', artist: 'A.G. Cook', src: 'https://files.catbox.moe/pj7u67.mp3', spotify: 'https://open.spotify.com/intl-es/track/7vZujUVbXHIvRM4HPcBJlB?si=1fa98f9e670c4885' },
     { title: 'Mind Loaded', artist: 'Blood Orange', src: 'https://files.catbox.moe/4596m1.mp3', spotify: 'https://open.spotify.com/intl-es/track/04KHyqdGs5sVEWX6UnukF2?si=b913bd5f95754dbf' },
-    { title: 'Go As a Dream', artist: 'Caroline Polachek', src: 'https://files.catbox.moe/iu8prj.mp3', spotify: 'https://open.spotify.com/intl-es/track/3nNN1uts4kwkdwwV1CzZaN?si=3a3ae409f67c4440' },
+    { title: 'Go As a Dream', artist: 'Caroline Polachek', src: 'https://files.catbox.moe/hqorfu.mp3', spotify: 'https://open.spotify.com/intl-es/track/3nNN1uts4kwkdwwV1CzZaN?si=3a3ae409f67c4440' },
     { title: 'Dagger', artist: 'Slowdive', src: 'https://files.catbox.moe/882p88.mp3', spotify: 'https://open.spotify.com/intl-es/track/3MmRfG64qt04Efx9gK9Ec8?si=234b84c9c3154fe7' },
     { title: 'Nadie Sabe', artist: 'Ciutat, TRISTÁN!', src: 'https://files.catbox.moe/5476ts.mp3', spotify: 'https://open.spotify.com/intl-es/track/07Zg8kkvdzJDhWZYpqgZAE?si=6fc821a150b44d9e' }
   ];
@@ -32,11 +32,9 @@
       return;
     }
 
-    // prevent adding listeners twice on the same root
     if (root.dataset.mpInitialized) return;
     root.dataset.mpInitialized = 'true';
 
-    // Query elements inside the player root (safer than global IDs)
     const q = sel => root.querySelector(sel);
     const playBtn = q('#play');
     const prevBtn = q('#prev');
@@ -54,7 +52,6 @@
       return;
     }
 
-    // single shared audio instance (keeps playing state if you navigate dynamically)
     const audio = window.musicPlayerAudio = window.musicPlayerAudio || new Audio();
     let currentIndex = 0;
     audio.preload = 'metadata';
@@ -74,18 +71,18 @@
       audio.src = playlist[currentIndex].src;
       audio.play().catch(e => console.warn('music-player: play() blocked (user gesture needed) or error:', e));
       isPlaying = true;
-      playBtn.innerHTML = '&#10074;&#10074;';
+      playBtn.innerHTML = '⏸︎';
     }
 
     playBtn.addEventListener('click', () => {
       if (!isPlaying) {
         audio.play().catch(e => console.warn('music-player: play() blocked', e));
         isPlaying = true;
-        playBtn.innerHTML = '&#10074;&#10074;';
+        playBtn.innerHTML = '⏸︎';
       } else {
         audio.pause();
         isPlaying = false;
-        playBtn.innerHTML = '&#9654;';
+        playBtn.innerHTML = '⏵︎';
       }
     });
 
@@ -117,23 +114,19 @@
     }
 
     if (volumeSlider) {
-      // Set initial volume
       volumeSlider.value = (!isNaN(audio.volume) ? audio.volume : 1);
       audio.volume = Number(volumeSlider.value);
 
-      // Function to update the slider background
       function updateVolumeBackground(slider) {
         const value = slider.value;
         slider.style.background = `linear-gradient(to right, #ac67baff 0%, #ac67baff ${value*100}%, #EACAEE ${value*100}%, #EACAEE 100%)`;
       }
 
-      // Update on input
       volumeSlider.addEventListener('input', (e) => {
         audio.volume = Number(e.target.value);
         updateVolumeBackground(volumeSlider);
       });
 
-      // Initialize background on load
       updateVolumeBackground(volumeSlider);
     }
 
@@ -142,6 +135,5 @@
     updateSongInfo();
   }
 
-  // Try to init immediately; if the sidebar is injected later the function will retry.
   init();
 })();

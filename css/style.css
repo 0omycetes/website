@@ -40,7 +40,6 @@ ul {
     border: 2px #571D63 dashed;
     border-radius: 15px;
     padding: 10px 20px 10px 40px;
-    color: #2C0036;
 }
 
 .header {
@@ -251,8 +250,8 @@ section, article {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2px;
-    height: auto;      /* let it grow */
+    gap: 4px;
+    height: auto;
 }
 
 .player-header {
@@ -271,7 +270,6 @@ section, article {
 .controls {
     display: flex;
     justify-content: space-around;
-    font-size: 0.3rem;
 }
 
  .controls button {
@@ -283,6 +281,7 @@ section, article {
     cursor: pointer;
     color: #571D63;
     transition: all 0.2s;
+    font-size: 0.7rem;
 }
 
 .progress-container {
@@ -317,8 +316,8 @@ section, article {
 
 .volume-container {
     display: flex;
-    justify-content: center; /* centers slider horizontally */
-    margin: 5px 0;          /* spacing from artist name and controls */
+    justify-content: center;
+    margin: 5px 0;
 }
 
 .volume-slider {
@@ -351,6 +350,6 @@ section, article {
 }
 
 .volume-slider::-moz-range-progress {
-    background-color: #571D63; /* color of filled portion */
+    background-color: #571D63;
     height: 6px;
 }

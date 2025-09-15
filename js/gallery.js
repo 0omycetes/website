@@ -8,7 +8,7 @@ function initGallery() {
     const reviewEl = document.getElementById('movie-review');
     const closeBtn = document.getElementById('close-btn');
 
-    if (!cards.length) return; // exit if no gallery on the page
+    if (!cards.length) return;
 
     cards.forEach(card => {
       card.addEventListener('click', () => {
