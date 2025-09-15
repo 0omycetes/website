@@ -3,16 +3,17 @@
   window.musicPlayerInitialized = true;
 
   const playlist = [
-    { title: 'Somebodys Watching Me', artist: 'Rockwell', src: 'https://files.catbox.moe/k77chw.mp3', spotify: 'https://open.spotify.com/track/6A4Jc8npNo79BOgsrPptLA?si=a16dae273ea844f4' },
-    { title: 'A Forest', artist: 'The Cure', src: 'https://files.catbox.moe/lrerwi.mp3', spotify: 'https://open.spotify.com/track/3O4TPMOgChXOerSdB5WENH?si=f941abdc44ae454d' },
-    { title: 'Goo Goo Muck', artist: 'The Cramps', src: 'https://files.catbox.moe/290yuj.mp3', spotify: 'https://open.spotify.com/track/3EEd6ldsPat620GVYMEhOP?si=32890f9b7a4f4737' },
-    { title: 'Run To You', artist: 'Bryan Adams', src: 'https://files.catbox.moe/71v0yc.mp3', spotify: 'https://open.spotify.com/track/2RWFncSWZEhSRRifqiDNVV?si=357990f7bdec4cdc' },
-    { title: 'Pet Sematary', artist: 'Ramones', src: 'https://files.catbox.moe/qygx9f.mp3', spotify: 'https://open.spotify.com/track/2PN0JeaGtkHrlcmwZFWzBM?si=cf5d3602f5db4fe6' },
-    { title: 'Very Spooky', artist: 'Mac Demarco', src: 'https://files.catbox.moe/s7gb4l.mp3', spotify: 'https://open.spotify.com/track/3w5lN6GQaBLqwgTTafjyOs?si=c964c3e526994729' },
-    { title: 'Ghostbusters', artist: 'Ray Parker Jr.', src: 'https://files.catbox.moe/qfax5g.mp3', spotify: 'https://open.spotify.com/track/6QGI6v91UlqSytTDVKZIUP?si=e5712cdd3bcf4c07' },
-    { title: 'Lies In The Eyes Of Love', artist: 'Part Time', src: 'https://files.catbox.moe/mp9ycc.mp3', spotify: 'https://open.spotify.com/track/5JQuDFh7QKTjJDoEQAmaO8?si=72944150f70d40a5' },
-    { title: 'Dead Mans Party', artist: 'Oingo Boingo', src: 'https://files.catbox.moe/t062vf.mp3', spotify: 'https://open.spotify.com/track/2h47SG8bNphmicAll4H9RV?si=887b915459934dac' },
-    { title: 'Candyman', artist: 'Siouxsie and the Banshees', src: 'https://files.catbox.moe/eta8xv.mp3', spotify: 'https://open.spotify.com/track/2DNDL86nEvF4HKw6F0U9J1?si=3a57b1d1a33d47d4' }
+    { title: 'Sidekick', artist: 'pablopablo, guitarricadelafuente', src: 'https://files.catbox.moe/n2yn2a.mp3', spotify: 'https://open.spotify.com/intl-es/track/6KUasBYtaeWOdIbC1FZNbI?si=637d751426e24ec4' },
+    { title: 'take me by the hand', artist: 'Oklou, Bladee', src: 'https://files.catbox.moe/1xfkve.mp3', spotify: 'https://open.spotify.com/intl-es/track/1oo8xwvtRep4Frhrpte5Eg?si=3c4b7b07c13f4e49' },
+    { title: 'Look At Me Now', artist: 'Caroline Polachek', src: 'https://files.catbox.moe/ogivwa.mp3', spotify: 'https://open.spotify.com/intl-es/track/1z7Pc2fpIffOtXQh1XHMn9?si=bf5ee8414b6e4bf4' },
+    { title: 'Heavy Water/I&#39;d rather be sleeping', artist: 'Grouper', src: 'https://files.catbox.moe/1e2hhl.mp3', spotify: 'https://open.spotify.com/intl-es/track/6IUwiHsyKAZtfBy37Wu4ij?si=bdd499f3dbe848cf' },
+    { title: 'I Don&#39;t Wanna Know', artist: 'Charli XCX', src: 'https://files.catbox.moe/bdlxk5.mp3', spotify: 'https://open.spotify.com/intl-es/track/2wsypbBdFwN1woTAh9sq6X?si=c1733515cedf4fb1' },
+    { title: 'Heavenly', artist: 'Judeline, Rusowsky', src: 'https://files.catbox.moe/mw0prn.mp3', spotify: 'https://open.spotify.com/intl-es/track/5Bng1Bwy7PFQys6qByKmdT?si=360704f6a8644661' },
+    { title: 'Being Harsh', artist: 'A.G. Cook', src: 'https://files.catbox.moe/pj7u67.mp3', spotify: 'https://open.spotify.com/intl-es/track/7vZujUVbXHIvRM4HPcBJlB?si=1fa98f9e670c4885' },
+    { title: 'Mind Loaded', artist: 'Blood Orange', src: 'https://files.catbox.moe/4596m1.mp3', spotify: 'https://open.spotify.com/intl-es/track/04KHyqdGs5sVEWX6UnukF2?si=b913bd5f95754dbf' },
+    { title: 'Go As a Dream', artist: 'Caroline Polachek', src: 'https://files.catbox.moe/iu8prj.mp3', spotify: 'https://open.spotify.com/intl-es/track/3nNN1uts4kwkdwwV1CzZaN?si=3a3ae409f67c4440' },
+    { title: 'Dagger', artist: 'Slowdive', src: 'https://files.catbox.moe/882p88.mp3', spotify: 'https://open.spotify.com/intl-es/track/3MmRfG64qt04Efx9gK9Ec8?si=234b84c9c3154fe7' },
+    { title: 'Nadie Sabe', artist: 'Ciutat, TRISTÁN!', src: 'https://files.catbox.moe/5476ts.mp3', spotify: 'https://open.spotify.com/intl-es/track/07Zg8kkvdzJDhWZYpqgZAE?si=6fc821a150b44d9e' }
   ];
 
   function formatTime(t) {
