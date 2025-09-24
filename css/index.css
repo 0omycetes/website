@@ -11,7 +11,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: 2.5vh auto;
-  gap: 0.5vw;
+  gap: 0.5vw 1.5vw;
   max-width: 30vw;
 
   img {
