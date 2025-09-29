@@ -13,7 +13,8 @@
     { title: 'Mind Loaded', artist: 'Blood Orange', src: 'https://files.catbox.moe/4596m1.mp3', spotify: 'https://open.spotify.com/intl-es/track/04KHyqdGs5sVEWX6UnukF2?si=b913bd5f95754dbf' },
     { title: 'Go As a Dream', artist: 'Caroline Polachek', src: 'https://files.catbox.moe/hqorfu.mp3', spotify: 'https://open.spotify.com/intl-es/track/3nNN1uts4kwkdwwV1CzZaN?si=3a3ae409f67c4440' },
     { title: 'Dagger', artist: 'Slowdive', src: 'https://files.catbox.moe/882p88.mp3', spotify: 'https://open.spotify.com/intl-es/track/3MmRfG64qt04Efx9gK9Ec8?si=234b84c9c3154fe7' },
-    { title: 'Nadie Sabe', artist: 'Ciutat, TRISTÁN!', src: 'https://files.catbox.moe/5476ts.mp3', spotify: 'https://open.spotify.com/intl-es/track/07Zg8kkvdzJDhWZYpqgZAE?si=6fc821a150b44d9e' }
+    { title: 'Nadie Sabe', artist: 'Ciutat, TRISTÁN!', src: 'https://files.catbox.moe/5476ts.mp3', spotify: 'https://open.spotify.com/intl-es/track/07Zg8kkvdzJDhWZYpqgZAE?si=6fc821a150b44d9e' },
+    { title: 'Better Off Alone', artist: 'Alice Deejay', src: 'https://files.catbox.moe/5cnlxf.mp3', spotify: 'https://open.spotify.com/intl-es/track/5XVjNRubJUW0iPhhSWpLCj?si=4b0c243364264107' }
   ];
 
   function formatTime(t) {
